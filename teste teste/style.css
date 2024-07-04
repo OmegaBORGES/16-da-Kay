@@ -53,6 +53,7 @@ body {
     text-align: center;
     background-color: pink;
     width: 100%;
+    font-weight: 500;
 }
 
 .container-header {
@@ -81,3 +82,40 @@ body {
     gap: 10px;
 }
 
+.textlinda{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.controls{
+    display: flex;
+    margin-top: 20px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(214, 214, 214);
+    width: 300px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-bottom: 4%;
+    margin-top: 50px;
+    box-shadow: rgb(0, 0, 0, 0.6) 0px 4px 8px;
+    border-radius: 25px;
+}
+
+.playButton {
+    width: 80px;
+    height: 70px;
+    background-color: #6fc56f;
+    border-radius: 5px;
+}
