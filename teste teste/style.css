@@ -84,7 +84,7 @@ body {
 
 .textlinda{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -101,7 +101,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(102, 18, 18);
     width: 300px;
     height: 500px;
     margin-left: auto;
@@ -113,9 +113,14 @@ body {
     border-radius: 25px;
 }
 
+
+.player img{
+    border-radius: 10px;
+}
+
 .playButton {
     width: 80px;
     height: 70px;
-    background-color: #6fc56f;
+    background-color: #ffffff;
     border-radius: 5px;
 }

@@ -42,7 +42,7 @@
     <div class="player">
       <img width="250" height="300" src="./teste teste/imagenss/WhatsApp Image 2024-07-04 at 16.24.10.jpeg" />
 
-      <span><br>Musica do tavinho</span>
+      <span style="color: rgb(255, 255, 255);"><br>For You</span>
       <div class="controls">
         <button class="playButton">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3em"
@@ -52,8 +52,22 @@
             </path>
           </svg>
         </button>
-      </div>
-    </div>
-</body>
+     </div>
 
+      <audio id="myAudio" src="./teste teste/musica/Bruno Mars - When I see your face (Just The Way You Are) (Lyrics).mp3"></audio>
+
+      <script>
+          var audio = document.getElementById('myAudio');
+          var playButton = document.querySelector('.playButton');
+  
+          playButton.addEventListener('click', function() {
+              if (audio.paused) {
+                  audio.play();
+              } else {
+                  audio.pause();
+              }
+          });
+        </script>
+     </div>
+  </body>
 </html>
