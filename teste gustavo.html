@@ -10,9 +10,13 @@
 </head>
 
 <body>
+
+  
   <div class="container">
-    <div class="header"> 💕 Parabéns, Minha Princesa 💕
-      <div class="teste">De seu incrível namorado Gustavo
+    <div class="header">
+      <span class="pulsar">💕 Parabéns, Minha Princesa 💕</span> 
+      <div class="teste">
+        <span class="pulsar2">De seu incrível namorado Gustavo</span>
       </div>
 
     </div>
@@ -45,11 +49,17 @@
       <span style="color: rgb(255, 255, 255);"><br>For You</span>
       <div class="controls">
         <button class="playButton">
-          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3em"
+          <svg id="play" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3em"
             width="3em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 0, 0);">
             <path
               d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
             </path>
+          </svg>
+          <svg id="pause" fill="#000000" height="36px" width="36px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+          viewBox="0 0 512 512" xml:space="preserve">
+          <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M224,320
+            c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z M352,320
+            c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z"/>
           </svg>
         </button>
      </div>
@@ -59,15 +69,41 @@
       <script>
           var audio = document.getElementById('myAudio');
           var playButton = document.querySelector('.playButton');
-  
+          var play = document.getElementById('play');
+          var pause = document.getElementById('pause');
+
+          pause.style.display = 'none';
+          play.style.display = 'block';
+
           playButton.addEventListener('click', function() {
               if (audio.paused) {
                   audio.play();
+                  play.style.display = 'none';
+                  pause.style.display = 'block';
               } else {
                   audio.pause();
+                  play.style.display = 'block';
+                  pause.style.display = 'none';
               }
           });
         </script>
      </div>
+
+     <footer class="tarjasul" style="opacity: 1; transform: none;">
+        <p class="animacao">© 2024 🥳16 anos da Kay🥳 Minha Dondoquinha💖. Hoje o dia é todo seu meu AMOR!!!</p></footer>
+
+      <style>
+        @keyframes moverDireitaEsquerda {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(100%); }
+        }
+    
+        .animacao {
+            animation: moverDireitaEsquerda 12s linear infinite;
+        }
+    </style>
+
+      
   </body>
 </html>
