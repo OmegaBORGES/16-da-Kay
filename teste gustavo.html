@@ -39,14 +39,19 @@
     você é uma pessoa muito especial para mim! Que deus coloque em sua vida muito saúde, sucesso e felicidade!!!<br>
     Você é uma garota incrível que consegue irradiar qualquer lugar com a alegria que você transmite, e com esse sorriso
     que eu me encanto toda vez que o vejo!
-    Vou estar sempre ao seu lado, independente da ocasição estarei ao seu lado, como namorado, amigo, parceiro e
-    companheiro! Aproveita seu dia minha Princesa!!!
+    Vou estar sempre ao seu lado, independente da ocasição, como namorado, amigo, parceiro e
+    companheiro!
+    Você é a única pessoa pela qual meu coração bate tão forte! Eu te amo muitoooo💖💖💖
+    Aproveita seu dia minha Princesa!!!
   </div>
 
     <div class="player">
       <img width="250" height="300" src="./teste teste/imagenss/WhatsApp Image 2024-07-04 at 16.24.10.jpeg" />
 
       <span style="color: rgb(255, 255, 255);"><br>For You</span>
+      <span style="color: rgb(182, 177, 177); font-size: 20px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      padding-top: 2%;">
+        Play</span>
       <div class="controls">
         <button class="playButton">
           <svg id="play" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3em"
@@ -66,44 +71,36 @@
 
       <audio id="myAudio" src="./teste teste/musica/Bruno Mars - When I see your face (Just The Way You Are) (Lyrics).mp3"></audio>
 
-      <script>
-          var audio = document.getElementById('myAudio');
-          var playButton = document.querySelector('.playButton');
-          var play = document.getElementById('play');
-          var pause = document.getElementById('pause');
-
-          pause.style.display = 'none';
-          play.style.display = 'block';
-
-          playButton.addEventListener('click', function() {
-              if (audio.paused) {
-                  audio.play();
-                  play.style.display = 'none';
-                  pause.style.display = 'block';
-              } else {
-                  audio.pause();
-                  play.style.display = 'block';
-                  pause.style.display = 'none';
-              }
-          });
-        </script>
      </div>
 
      <footer class="tarjasul" style="opacity: 1; transform: none;">
         <p class="animacao">© 2024 🥳16 anos da Kay🥳 Minha Dondoquinha💖. Hoje o dia é todo seu meu AMOR!!!</p></footer>
 
-      <style>
-        @keyframes moverDireitaEsquerda {
-            0% { transform: translateX(-100%); }
-            50% { transform: translateX(0); }
-            100% { transform: translateX(100%); }
-        }
-    
-        .animacao {
-            animation: moverDireitaEsquerda 10s linear infinite;
-        }
-    </style>
+   
 
       
   </body>
+
+  <script>
+    var audio = document.getElementById('myAudio');
+    var playButton = document.querySelector('.playButton');
+    var play = document.getElementById('play');
+    var pause = document.getElementById('pause');
+
+    pause.style.display = 'none';
+    play.style.display = 'block';
+
+    playButton.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+            play.style.display = 'none';
+            pause.style.display = 'block';
+        } else {
+            audio.pause();
+            play.style.display = 'block';
+            pause.style.display = 'none';
+        }
+    });
+  </script>
+
 </html>
