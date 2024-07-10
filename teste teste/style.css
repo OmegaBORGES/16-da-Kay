@@ -7,6 +7,9 @@ body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     overflow-x: hidden;
+    background-image: url('./gif/ko74l_gif\ \(376×380\).gif');
+    background-size: 25%;
+    
 }
 
  .container {
@@ -91,7 +94,10 @@ body {
 .legenda{
     font-size: 25px;
     margin-top: 0.5%;
-    
+    text-align: center;
+    background: rgb(255, 255, 255, 0.7)
+
+
 }
 
 .mosaico {
@@ -107,6 +113,8 @@ body {
     justify-content: center;
     text-align: center;
     padding: 10px;
+    background: rgb(255, 255, 255, 0.7);
+    
 
 }
 
@@ -158,6 +166,7 @@ body {
 
     .legenda {
         text-align: center;
+        background-color: white;
     }
 
     .player {
